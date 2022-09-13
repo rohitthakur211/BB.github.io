@@ -1,0 +1,199 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 62.5rem;
+  height: 37.5rem;
+  padding: 1.563rem;
+  margin: 1.563rem auto 0;
+  box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h2 {
+  background-color: #fcfcfc;
+  color: #7ed321;
+  font-size: 1.5rem;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  border: 0.063rem dotted #333;
+}
+
+h4 {
+  padding-bottom: 0.313rem;
+  color: #7ed321;
+}
+
+.input-group {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0.313rem 0;
+}
+
+.input-box {
+  width: 100%;
+  margin-right: 0.75rem;
+  position: relative;
+}
+
+.input-box:last-child {
+  margin-right: 0;
+}
+
+.name {
+  padding: 0.875rem 0.625rem 0.875rem 3.125rem;
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 0.063rem solid #00000033;
+  outline: none;
+  letter-spacing: 0.063rem;
+  transition: 0.3s;
+  border-radius: 0.188rem;
+  color: #333;
+}
+
+.name:focus,
+.dob:focus {
+  -webkit-box-shadow: 0 0 0.125rem 0.063rem #7ed32180;
+  -moz-box-shadow: 0 0 0.125rem 0.063rem #7ed32180;
+  box-shadow: 0 0 0.125rem 0.063rem #7ed32180;
+  border: 0.063rem solid #7ed321;
+}
+
+.input-box .icon {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  bottom: 0rem;
+  color: #333;
+  background-color: #f1f1f1;
+  border-radius: 0.125rem 0 0 0.125rem;
+  transition: 0.3s;
+  font-size: 1.25rem;
+  pointer-events: none;
+  border: 0.063rem solid #00000033;
+  border-right: none;
+}
+
+.name:focus + .icon {
+  background-color: #7ed321;
+  color: #fff;
+  border-right: 0.063rem solid blue;
+  border: none;
+  transition: 1s;
+}
+
+.dob {
+  width: 30%;
+  padding: 0.875rem;
+  text-align: center;
+  background-color: #fcfcfc;
+  transition: 0.3s;
+  outline: none;
+  border: 0.063rem solid #c0bfbf;
+  border-radius: 0.188rem;
+}
+
+.radio {
+  display: none;
+}
+
+.input-box label {
+  width: 50%;
+  padding: 0.813rem;
+  background-color: #fcfcfc;
+  /* display: inline-block; */
+  float: left;
+  text-align: center;
+  border: 0.063rem solid #c0bfbf;
+}
+
+.input-box label:first-of-type {
+  border-top-left-radius: 0.188rem;
+  border-bottom-left-radius: 0.188rem;
+  border-right: none;
+}
+
+.input-box label:last-of-type {
+  border-top-right-radius: 0.188rem;
+  border-bottom-right-radius: 0.188rem;
+}
+
+.radio:checked + label {
+  background-color: red;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.input-box select {
+  /* display: inline-block; */
+  width: 50%;
+  padding: 0.75rem;
+  background-color: #fcfcfc;
+  float: left;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+  border: 0.063rem solid #c0bfbf;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.input-box select:focus {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+}
+
+button {
+  width: 57.5rem;
+  background: transparent;
+  border: none;
+  background: red;
+  color: #fff;
+  padding: 0.313rem;
+  border-radius: 0.25rem;
+  font-size: 1.875rem;
+  transition: all 0.35s ease;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: blue;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    display: block;
+    width: 30rem;
+    height: 50rem;
+  }
+  button{
+    width: 28rem;
+  }
+
+  .input-box .icon {
+    display: block;
+  }
+  .input-box .icon {
+    display: block;
+  }
+}
